@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file ce_teaserbox.html5
+ * @author Katrin Beutler
+ * @version 3.5.6
+ * @package kb.contao.extensions.ce
+ * @copyright Katrin Beutler
+ */
+?>
+<?php $this->extend('block_searchable') ?>
+
+<?php $this->block('headline') ?>
+<?php $this->endblock() ?>
+
+<?php $this->class .= ' mod_navigation'; ?>
+<?php $this->block('content') ?>
+    <ul>
+        <?php foreach($this->tbody as $key => $navItem ): ?>
+            <li>
+                <a href="<?= $_SERVER['REQUEST_URI'] . $_SERVER['QUERY_STRING']; ?>#<?= $navItem['alias']['content']; ?>">
+                    <?php if(trim($navItem['titleAnchor']['content']) !== '&nbsp;'): ?>
+                        <?= $navItem['titleAnchor']['content']; ?>
+                    <?php else: ?>
+                        <?= $navItem['title']['content']; ?>
+                    <?php endif; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php $this->endblock() ?>

@@ -1,0 +1,20 @@
+
+<!-- indexer::stop -->
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <?php $this->block('headline'); ?>
+	  <?php if ($this->headline): ?>
+  			<<?= $this->hl ?>>
+	  			<?php if($this->hl === 'h2'): ?>
+	  				<span <?= ($this->hl === 'h2')? 'class="' . $this->h2_color_selection . '"' : ''; ?>><?= $this->headline ?></span>
+		  		<?php else: ?>
+		  	    	<?= $this->headline ?>
+		  		<?php endif; ?>
+	  		</<?= $this->hl ?>>
+	  <?php endif; ?>
+  <?php $this->endblock(); ?>
+  
+  <?php $this->block('content'); ?>
+  <?php $this->endblock(); ?>
+
+</div>
+<!-- indexer::continue -->
