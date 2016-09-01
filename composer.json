@@ -4,7 +4,7 @@
   "keywords": ["contao", "extension", "anchor", "navigation"],
   "type": "contao-module",
   "homepage": "",
-  "license": "proprietary",
+  "license": "LGPL-3.0+",
   "authors":[
     {
       "name":"Katrin Beutler"
@@ -18,7 +18,7 @@
   "extra":{
     "contao": {
       "sources":{
-        "module": "system/modules/customAnchorNavigation"
+        "": "system/modules/aaaaaaa"
       }
     },
     "branch-alias": {
