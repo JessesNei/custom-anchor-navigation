@@ -18,7 +18,7 @@
   "extra":{
     "contao": {
       "sources":{
-        "": "system/modules/aaaaaaa"
+        "": "system/modules/KbAnchorNavigation"
       }
     },
     "branch-alias": {
